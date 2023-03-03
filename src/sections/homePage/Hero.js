@@ -2,6 +2,7 @@ import React from 'react';
 import { useSetRecoilState } from 'recoil';
 // material
 import { Box, Button, Typography, useTheme } from '@mui/material';
+import KingBedIcon from '@mui/icons-material/KingBed';
 // atoms
 // components
 import { MotionContainer, TextAnimate } from 'src/components/animate';
@@ -85,7 +86,7 @@ function Hero() {
             </Box>
             {/* Hero actions */}
             <Box sx={{ display: 'flex', justifyContent: 'center', mt: 6, flexWrap: 'wrap' }}>
-              <Button sx={{ mr: 2 }} variant="contained">
+              <Button endIcon={<KingBedIcon />} sx={{ mr: 2 }} variant="contained">
                 انقلي عفشي
               </Button>
               <Button variant="outlined">تواصل معانا </Button>
