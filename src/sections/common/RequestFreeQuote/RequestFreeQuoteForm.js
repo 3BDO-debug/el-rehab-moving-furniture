@@ -44,6 +44,7 @@ function RequestFreeQuoteForm() {
       message: Yup.string().required('Please fill this field with any extra notes if any'),
     }),
     onSubmit: async (values, { resetForm, setSubmitting }) => {
+      window.open('https://wa.me/201116691020');
       setSubmitting(false);
       resetForm();
     },

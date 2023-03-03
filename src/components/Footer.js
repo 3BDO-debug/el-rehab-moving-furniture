@@ -76,24 +76,18 @@ export default function Footer() {
               sx={{ mt: 5, mb: { xs: 5, md: 0 } }}
             >
               <Box marginRight={1}>
-                <IconButton onClick={() => window.open('https://www.facebook.com/informa180/')}>
-                  <Box component="img" src="/icons/facebook.png" width={30} />
-                </IconButton>
-              </Box>
-
-              <Box marginRight={1}>
-                <IconButton onClick={() => window.open('https://www.instagram.com/informa180/')}>
-                  <Box component="img" src="/icons/instagram.png" width={30} />
-                </IconButton>
-              </Box>
-              <Box marginRight={1}>
                 <IconButton
                   onClick={() =>
                     window.open(
-                      'https://api.whatsapp.com/send?phone=201090028014&text=Hello%20Informa%2C%20I%20want%20to%20get%20in%20shape.%20'
+                      'https://www.facebook.com/110456618083817/posts/pfbid02DTyK8RbaGS8NYz28LYq7rVJEkiEMSUhWFuuKAqZYas8W6JqcNQXkxLpniYnCWBEhl/?sfnsn=scwspmo&mibextid=RUbZ1f'
                     )
                   }
                 >
+                  <Box component="img" src="/icons/facebook.png" width={30} />
+                </IconButton>
+              </Box>
+              <Box marginRight={1}>
+                <IconButton onClick={() => window.open('https://wa.me/201116691020')}>
                   <Box component="img" src="/icons/whatsapp.png" width={30} />
                 </IconButton>
               </Box>

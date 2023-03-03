@@ -277,7 +277,7 @@ function Header() {
             }}
           >
             {/* Whatsapp */}
-            <IconButton onClick={() => window.open('https://wa.link/35cv9w')}>
+            <IconButton onClick={() => window.open('https://wa.me/201116691020')}>
               <Box component="img" src="/icons/whatsapp.png" width={25} />
             </IconButton>
             {/* Dark / Light mode */}

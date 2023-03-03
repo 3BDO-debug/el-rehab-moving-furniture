@@ -1,26 +1,10 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import { useSetRecoilState } from 'recoil';
 import { Link as ScrollLink, animateScroll } from 'react-scroll';
 // material
-import {
-  Box,
-  Button,
-  Drawer,
-  IconButton,
-  List,
-  ListItemButton,
-  ListItemText,
-  Stack,
-  styled,
-  Typography,
-} from '@mui/material';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
+import { Box, Button, Drawer, List, ListItemButton, ListItemText, Stack, styled } from '@mui/material';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import KingBedIcon from '@mui/icons-material/KingBed';
 // theme
 import palette from 'src/theme/palette';
 // atoms
@@ -101,16 +85,16 @@ function SideDrawer({ isTriggered, closeHandler, headerLinks }) {
           </List>
           {/* Action button */}
           <Stack paddingRight={2} marginTop={5} paddingLeft={2} alignItems="center" justifyContent="center">
-            <Button sx={{ marginBottom: 2 }} fullWidth variant="contained" endIcon={<FitnessCenterIcon />}>
-              انقلي
+            <Button sx={{ marginBottom: 2 }} fullWidth variant="contained" endIcon={<KingBedIcon />}>
+              انقلي عفشي
             </Button>
             <Button
-              startIcon={<WhatsAppIcon />}
-              onClick={() => window.open('https://wa.link/35cv9w')}
+              endIcon={<WhatsAppIcon />}
+              onClick={() => window.open('https://wa.me/201116691020')}
               fullWidth
               variant="outlined"
             >
-              Contact us
+              تواصل معانا
             </Button>
           </Stack>
         </Box>

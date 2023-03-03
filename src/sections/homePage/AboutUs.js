@@ -27,7 +27,13 @@ function AboutUs() {
                 عفش المنزل حين ينتقلون الي مكان جديد و ذلك لأن العفش يحتاج الي عناية
               </Grid>
               <Grid item xs={12}>
-                <Button variant="outlined">اعرف اكتر</Button>
+                <Button
+                  onClick={() => window.open('https://wa.me/201116691020')}
+                  sx={{ mb: { xs: 2, md: 0 } }}
+                  variant="outlined"
+                >
+                  اعرف اكتر
+                </Button>
               </Grid>
             </Grid>
           </Grid>

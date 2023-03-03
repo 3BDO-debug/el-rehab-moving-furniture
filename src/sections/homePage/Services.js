@@ -24,6 +24,7 @@ const ServiceCard = ({ title, description, imagePath, elevation }) => {
           </Typography>
           <Box marginTop="40px">
             <GradientIconButton
+              onClick={() => window.open('https://wa.me/201116691020')}
               icon={<ArrowRightAltIcon sx={{ transform: 'rotate(180deg)' }} />}
               startColor="#007b3d"
               endColor="#2ecc71"
