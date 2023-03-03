@@ -277,13 +277,7 @@ function Header() {
             }}
           >
             {/* Whatsapp */}
-            <IconButton
-              onClick={() =>
-                window.open(
-                  'https://api.whatsapp.com/send?phone=201090028014&text=Hello%20Informa%2C%20I%20want%20to%20get%20in%20shape.%20'
-                )
-              }
-            >
+            <IconButton onClick={() => window.open('https://wa.link/35cv9w')}>
               <Box component="img" src="/icons/whatsapp.png" width={25} />
             </IconButton>
             {/* Dark / Light mode */}

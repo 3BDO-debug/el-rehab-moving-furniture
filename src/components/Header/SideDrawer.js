@@ -1,6 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import { useSetRecoilState } from 'recoil';
+import { Link as ScrollLink, animateScroll } from 'react-scroll';
 // material
 import {
   Box,
@@ -28,7 +29,7 @@ import Label from '../Label';
 
 // ------------------------------------------------------------------------------------------
 
-const DrawerLinkText = styled(Typography)(({ theme }) => ({
+const DrawerLinkText = styled(ScrollLink)(({ theme }) => ({
   ...theme.typography.subtitle1,
 }));
 
@@ -79,15 +80,16 @@ function SideDrawer({ isTriggered, closeHandler, headerLinks }) {
           {/* Nav links  */}
           <List sx={{ marginTop: 2 }}>
             {headerLinks.map((headerLink, index) => (
-              <ListItemButton
-                key={index}
-                onClick={() => {
-                  push(headerLink.href);
-                  closeHandler();
-                }}
-              >
+              <ListItemButton key={index}>
                 <ListItemText>
                   <DrawerLinkText
+                    onClick={() => {
+                      closeHandler();
+                    }}
+                    to={headerLink.href}
+                    spy={true}
+                    smooth={true}
+                    duration={500}
                     variant={pathname === headerLink.href ? 'gradientText' : 'inherit'}
                     sx={{ color: 'common.white', textTransform: 'capitalize' }}
                   >
@@ -100,15 +102,11 @@ function SideDrawer({ isTriggered, closeHandler, headerLinks }) {
           {/* Action button */}
           <Stack paddingRight={2} marginTop={5} paddingLeft={2} alignItems="center" justifyContent="center">
             <Button sx={{ marginBottom: 2 }} fullWidth variant="contained" endIcon={<FitnessCenterIcon />}>
-              Transform your mindset
+              انقلي
             </Button>
             <Button
               startIcon={<WhatsAppIcon />}
-              onClick={() =>
-                window.open(
-                  'https://api.whatsapp.com/send?phone=201090028014&text=Hello%20Informa%2C%20I%20want%20to%20get%20in%20shape.%20'
-                )
-              }
+              onClick={() => window.open('https://wa.link/35cv9w')}
               fullWidth
               variant="outlined"
             >
